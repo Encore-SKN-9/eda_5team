@@ -241,15 +241,12 @@
 ![image](https://github.com/user-attachments/assets/97c5eb57-a0f3-4cd0-96dc-edb3ad8e855b)
 
 
-**(제목)**
 ![image](https://github.com/user-attachments/assets/ae33fb62-6506-443e-a71f-7b2e60086439)
 
 
-**(제목)**
 ![image](https://github.com/user-attachments/assets/0271f5ba-5a55-404e-b5f4-8e991f46b7d7)
 
 
-**(제목)**
 <p float="left">
   <img src="[이미지_URL_1](https://github.com/user-attachments/assets/662869db-8056-48e2-beb6-7aae08b10a4d)" width="45%" />
   <img src="[이미지_URL_2](https://github.com/user-attachments/assets/832da906-63a5-458e-91d7-2207693fd180)" width="45%" />
@@ -258,10 +255,8 @@
 
 #### **5-2. 건강 관련 변수와 기대수명간의 관계 EDA**  
 
-**(제목)**
 ![image](https://github.com/user-attachments/assets/70da295f-0021-435e-99f0-355edde6acfe)
 
-**(제목)**
 ![image](https://github.com/user-attachments/assets/4beca8a8-145c-405d-9dc7-f9405063b17b)
 
 #### **5-3. 경제적 사회적 요인간의 관계 EDA**
