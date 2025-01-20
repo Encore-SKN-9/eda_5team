@@ -362,7 +362,7 @@
 
 
 <div align="center">
-  <img src="./readme_images/재동boxplot.png" height="70%" width="70%">
+  <img src="./readme_images/재동_boxplot.png" height="70%" width="70%">
 </div>
 
 <div align="center">
