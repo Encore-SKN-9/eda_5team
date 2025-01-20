@@ -1,20 +1,15 @@
-# **프로젝트 명 : 기대수명 요인 분석** 🚀  
+# **프로젝트 명 : 기대수명에 영향을 미치는 요인 분석** 🚀  
 
-## 📌**프로젝트 배경**
-![image](https://github.com/user-attachments/assets/e6a39c71-edfd-4a01-9646-d08063af821c)
-
-[Click here for more information](https://www.yna.co.kr/view/AKR20240806040000017)
-> **뉴스 헤드라인**: 성별·결혼·교육·인종에 따라 기대수명 18년 차이  
-* 미국 연구팀은 성별, 결혼, 교육 수준, 인종의 조합에 따라 기대수명이 최대 18년까지 차이가 날 수 있음을 발견했다.  
-* 예를 들어, "고졸 이하·미혼·백인·남성"의 기대수명은 약 37.1년인 반면, "대졸 이상·기혼·백인·여성"의 기대수명은 약 55.1년으로 조사된 바 있다.
+<br>
 
 ---
 
-## 📌 **프로젝트 목표**  
-우리 팀은 이 연구에서 한발 더 나아가, 국가적 요인(건강, 교육, GDP, 경제) 및 다양한 변수들이 기대수명에 어떤 영향을 미치는지 구체적으로 분석하여 인사이트를 도출하고자 합니다.
 
----
 ## 🌟**팀명**
+<br>
+<br>
+<br>
+
 ## 🌟 **팀원 소개**  
 
 | 이름      | GitHub ID                          |
@@ -23,6 +18,8 @@
 | 👩‍💻 이다인  | [@daainn](https://github.com/daainn)        |
 | 👩‍💻 이재혁  | [@ohdyo](https://github.com/ohdyo)          |
 | 👨‍💻 최재동  | [@Monkakaka](https://github.com/Monkakaka) |
+
+<br>
 
 ---
 
@@ -34,11 +31,28 @@
 | **라이브러리**   | ![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy)       ![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas)   ![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=Matplotlib) ![Folium](https://img.shields.io/badge/Folium-77B829?style=for-the-badge&logo=folium&logoColor=white) |
 | **협업 툴**      | ![GitHub](https://img.shields.io/badge/github-121011?style=for-the-badge&logo=github)   ![Git](https://img.shields.io/badge/git-F05033?style=for-the-badge&logo=git)          |
 
+<br>
+
 ---
 
 ## 📄 **프로젝트 설명**  
 
+### 0. 프로젝트 주제 선정 배경
+<div align="center">
+  <img src="./readme_images/뉴스기사.png" height="70%" width="70%">
+</div>
+
+[Click here for more information](https://www.yna.co.kr/view/AKR20240806040000017)
+
+<br>
+
+#### 프로젝트 목적
+우리 팀은 이 연구에서 한발 더 나아가, 국가적 요인(건강, 교육, GDP, 경제) 및 다양한 변수들이 기대수명에 어떤 영향을 미치는지 구체적으로 분석하여 인사이트를 도출하고자 합니다.
+
+<br>
+
 ### 1. 데이터 선택 근거  
+
 
 * 해당 데이터셋은 다양한 국가의 평균 수명 데이터를 통합한 것으로, 사회경제적 요인과 건강 관련 지표도 함께 제공한다. 
 * 따라서 해당 데이터셋을 통해 수명과 지표 간의 상관관계 및 지역 간 불평등을 분석하는 데 유용할 것이라 판단하여서 데이터를 선택하였다.
@@ -46,11 +60,16 @@
 **데이터 출처**
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/shreyasg23/life-expectancy-averaged-dataset/code)
 
+<br>
+
+---
 
 ### 2. 데이터 구조  
 
 #### **분석 타겟 컬럼**
 - `Life_expectancy` (float): 기대수명
+
+  <br>
 
 #### **유아, 청소년 관련 변수**  
 - `Infant_deaths` (float): 영아 사망 수  
@@ -78,7 +97,8 @@
 - `Alcohol_consumption` (float): 1인당 알코올 소비량  
 - `Adult_mortality` (float): 성인 사망률
 
-  
+
+  <br>
 
 ### 3. 데이터 기초 통계량  
 |   | Year   | Infant_deaths | Under_five_deaths | Adult_mortality | Alcohol_consumption | Hepatitis_B | Measles | BMI     | Polio   | Diphtheria | Incidents_HIV | GDP_per_capita | Population_mln | Thinness_ten_nineteen_years | Thinness_five_nine_years | Schooling | Economy_status | Life_expectancy |
@@ -92,197 +112,311 @@
 | **75%**        | 2007.5 | 48.959375      | 68.321875         | 247.523922      | 7.843438            | 94.375000   | 92.250000 | 26.425000 | 96.062500 | 95.781250   | 0.516250       | 12037.781250   | 22.745313      | 7.165625               | 7.056250               | 10.365625 | 1.000000       | 74.937500       |
 | **max**        | 2007.5 | 115.718750     | 178.725000        | 572.974312      | 15.100000           | 98.875000   | 99.000000 | 31.687500 | 98.937500 | 99.000000   | 18.164375      | 102972.687500  | 1321.239375    | 27.100000              | 27.943750              | 13.268750 | 1.000000       | 82.456250       |
 
-> year 변수는 년도가 2007.5로 고정되어있기 때문에 eda컬럼에서 제외*
+> *year 변수는 년도가 2007.5로 고정되어있기 때문에 eda컬럼에서 제외*
 
+<br>
 
+---
 
 ### 4. 데이터 전처리  
+
+<br>
 
 ### **데이터 결측값**
 * 데이터 결측값은 `df.isnull().sum()`을 통해 확인해 본 결과 존재하지 않아서, 따로 처리를 하지 않았다.
 
+<br>
   
 ### **데이터 이상값**
 
 #### **수치형 변수 이상값 확인**
 
-![image](https://github.com/user-attachments/assets/183ef5d2-6b10-423e-8c45-5762438de53f)
+<div align="center">
+  <img src="./readme_images/이상값boxplot.png" height="70%" width="70%">
+</div>
+
 * 수치형 변수의 이상치를 확인하기 위해 Boxplot으로 시각화 해본 결과 `Alcohol_consumption`, `Schooling`, `Life_expectancy`을 제외하고 사분위수를 기준으로 이상치가 존재하였다.
 * 각 변수별 이상치는 변수의 특성을 분석하여 따로 처리하는 것이 좋을 것이라 판단하여 컬럼 별로 분석하여 이상치를 처리하였다.
 
+<br>
+
 #### **범주형 변수 이상값 확인**
 
-| Country              | Count |
-|----------------------|-------|
-| Afghanistan          | 1     |
-| Albania              | 1     |
-| Algeria              | 1     |
-| Angola               | 1     |
-| Antigua and Barbuda  | 1     |
-| ...                  | ...   |
-| Venezuela, RB        | 1     |
-| Vietnam              | 1     |
-| Yemen, Rep.          | 1     |
-| Zambia               | 1     |
-| Zimbabwe             | 1     |
-
-| Region                            | Count |
-|-----------------------------------|-------|
-| Africa                            | 51    |
-| Asia                              | 27    |
-| European Union                    | 27    |
-| Central America and Caribbean     | 19    |
-| Rest of Europe                    | 15    |
-| ...                               | ...   |
+<div align="center">
+  <table>
+    <tr>
+      <!-- 첫 번째 표 -->
+      <td>
+        <table>
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Afghanistan</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Albania</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Algeria</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Angola</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <!-- 두 번째 표 -->
+      <td>
+        <table>
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Africa</td>
+              <td>51</td>
+            </tr>
+            <tr>
+              <td>Asia</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>European Union</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>Central America and Caribbean</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
 
 *  `value_counts`를 통해 범주형 변수의 이상치를 확인해 본 결과 모든 나라가 1개의 열로 들어가 있는 것을 확인하였다.
 *  또한 대륙(지역)별로도 나라가 알맞게 들어가 있는 것을 확인하였다.
 
+
+<br>
+
 ### **컬럼별 이상치 분석**
+
 
 #### **GDP와 인구수 이상치 분석**
 
-![image](https://github.com/user-attachments/assets/ae54c2ac-4bb3-4fc7-b01f-7978f530544e)
+<div align="center">
+  <img src="./readme_images/gdg_인구수_산점도.png" height="70%" width="70%">
+</div>
+
 * 산점도를 확인해 본 결과 지역별로 다른 경향을 보이는 것으로 파악돼 지역별로 나누어 각각 Z-SCORE를 게산한 후 Z-SCORE값이 3이 넘는 수치를 확인하였다.
 
+<br>
   
-![image](https://github.com/user-attachments/assets/e97aa5b2-401a-4701-af37-4de785d7bd7b)
-<p float="left">
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Region</th>
-        <th>Country</th>
-        <th>GDP_per_capita_Z</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Africa</td>
-        <td>Equatorial Guinea</td>
-        <td>3.308435</td>
-      </tr>
-      <tr>
-        <td>Africa</td>
-        <td>Libya</td>
-        <td>3.011919</td>
-      </tr>
-      <tr>
-        <td>Central America and Caribbean</td>
-        <td>Bahamas, The</td>
-        <td>3.263916</td>
-      </tr>
-      <tr>
-        <td>Africa</td>
-        <td>Seychelles</td>
-        <td>3.368514</td>
-      </tr>
-      <tr>
-        <td>European Union</td>
-        <td>Luxembourg</td>
-        <td>3.617869</td>
-      </tr>
-      <tr>
-        <td>Asia</td>
-        <td>Singapore</td>
-        <td>3.341175</td>
-      </tr>
-    </tbody>
-  </table>
-</p>
+<div align="center">
+  <img src="./readme_images/gdp_인구수_zscore.png" height="70%" width="70%">
+</div>
 
-<p float="left">
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Region</th>
-        <th>Country</th>
-        <th>Population_mln_Z</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Africa</td>
-        <td>Nigeria</td>
-        <td>4.920200</td>
-      </tr>
-      <tr>
-        <td>Asia</td>
-        <td>India</td>
-        <td>3.204249</td>
-      </tr>
-      <tr>
-        <td>Rest of Europe</td>
-        <td>Russian Federation</td>
-        <td>3.201684</td>
-      </tr>
-      <tr>
-        <td>South America</td>
-        <td>Brazil</td>
-        <td>3.046067</td>
-      </tr>
-      <tr>
-        <td>Asia</td>
-        <td>China</td>
-        <td>3.608051</td>
-      </tr>
-      <tr>
-        <td>European Union</td>
-        <td>Germany</td>
-        <td>3.029649</td>
-      </tr>
-    </tbody>
-  </table>
-</p>
+<div align="center">
+  <img src="./readme_images/zscore.png" height="70%" width="70%">
+</div>
+
+<br>
+
+<div align="center">
+  <div style="display: inline-block; margin-right: 20px;">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Country</th>
+          <th>GDP_per_capita_Z</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Africa</td>
+          <td>Equatorial Guinea</td>
+          <td>3.308435</td>
+        </tr>
+        <tr>
+          <td>Africa</td>
+          <td>Libya</td>
+          <td>3.011919</td>
+        </tr>
+        <tr>
+          <td>Central America and Caribbean</td>
+          <td>Bahamas, The</td>
+          <td>3.263916</td>
+        </tr>
+        <tr>
+          <td>Africa</td>
+          <td>Seychelles</td>
+          <td>3.368514</td>
+        </tr>
+        <tr>
+          <td>European Union</td>
+          <td>Luxembourg</td>
+          <td>3.617869</td>
+        </tr>
+        <tr>
+          <td>Asia</td>
+          <td>Singapore</td>
+          <td>3.341175</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="display: inline-block;">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Country</th>
+          <th>Population_mln_Z</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Africa</td>
+          <td>Nigeria</td>
+          <td>4.920200</td>
+        </tr>
+        <tr>
+          <td>Asia</td>
+          <td>India</td>
+          <td>3.204249</td>
+        </tr>
+        <tr>
+          <td>Rest of Europe</td>
+          <td>Russian Federation</td>
+          <td>3.201684</td>
+        </tr>
+        <tr>
+          <td>South America</td>
+          <td>Brazil</td>
+          <td>3.046067</td>
+        </tr>
+        <tr>
+          <td>Asia</td>
+          <td>China</td>
+          <td>3.608051</td>
+        </tr>
+        <tr>
+          <td>European Union</td>
+          <td>Germany</td>
+          <td>3.029649</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 * 경제적 특성과 국가 크기 차이에 따라 판단했을 때 이상치로 판단되는 값들이 그 지역의 특성상 자연스러운 값이라고 판단되어 분포상 Z-score가 3을 넘는 값을 이상치로 판단하지 않고 EDA를 진행하였다.
 * 예) 인구 수의 경우 인도와 중국이 지역 평균에 비해 월등이 뛰는 것이 타당함.
 
+<br>
+
+---
+
+<br>
 
 ### 5. 데이터 EDA (탐색적 데이터 분석)  
+
 
 #### **5-1. 유아, 청소년 관련 변수와 기대수명간의 관계 EDA**  
 
 **1. 요소 간의 상관관계 파악**
 
-![image](https://github.com/user-attachments/assets/97c5eb57-a0f3-4cd0-96dc-edb3ad8e855b)
+<div align="center">
+  <img src="./readme_images/재동_상관관계.png" height="70%" width="70%">
+</div>
 
 
-![image](https://github.com/user-attachments/assets/ae33fb62-6506-443e-a71f-7b2e60086439)
+<div align="center">
+  <img src="./readme_images/재동_산점도.png" height="70%" width="70%">
+</div>
 
 
-![image](https://github.com/user-attachments/assets/0271f5ba-5a55-404e-b5f4-8e991f46b7d7)
+<div align="center">
+  <img src="./readme_images/재동boxplot.png" height="70%" width="70%">
+</div>
 
+<div align="center">
+  <img src="./readme_images/재동barplot.png" height="70%" width="70%">
+</div>
 
-<p float="left">
-  <img src="[이미지_URL_1](https://github.com/user-attachments/assets/662869db-8056-48e2-beb6-7aae08b10a4d)" width="45%" />
-  <img src="[이미지_URL_2](https://github.com/user-attachments/assets/832da906-63a5-458e-91d7-2207693fd180)" width="45%" />
-</p>
+<br>
 
 
 #### **5-2. 건강 관련 변수와 기대수명간의 관계 EDA**  
 
-![image](https://github.com/user-attachments/assets/70da295f-0021-435e-99f0-355edde6acfe)
+<div align="center">
+  <img src="./readme_images/유진_barplot.png" height="70%" width="70%">
+</div>
 
-![image](https://github.com/user-attachments/assets/4beca8a8-145c-405d-9dc7-f9405063b17b)
+<div align="center">
+  <img src="./readme_images/유진_boxplot.png" height="70%" width="70%">
+</div>
+
+<div align="center">
+  <img src="./readme_images/유진_산점도.png" height="70%" width="70%">
+</div>
+
+<div align="center">
+  <img src="./readme_images/유진_히트맵.png" height="70%" width="70%">
+</div>
+
+<br>
 
 #### **5-3. 경제적 사회적 요인간의 관계 EDA**
 
 **1. 국가별 기대수명**
 
-![image](https://github.com/user-attachments/assets/15aae3d8-cb64-491b-a3a7-09fc7565114f)
+<div align="center">
+  <img src="./readme_images/나라별_기대수명_지도.png" height="70%" width="70%">
+</div>
+
 * 나라 별로 기대수명을 시각화 해본 결과 대륙(지역)별로 비슷한 기대수명을 공유하는 경향이 보여 대륙별로 추가 분석을 진행해보았다.
 
 **2. 대륙(지역)별 기대수명**
 
-![image](https://github.com/user-attachments/assets/b20fc8f9-ab72-45c8-af2a-ec337b48823b)
+<div align="center">
+  <img src="./readme_images/지역별_kdeplot.png" height="70%" width="70%">
+</div>
+
 * `아프리카(Africa)` 지역은 가장 낮은 기대수명을 보이며, 국가 간 편차가 큰 편이다.
 * `오세아니아(Oceania)`, `유럽(Rest of Europe)`, `북아메리카(North America)`는 높은 기대수명을 공유하며, 분포가 좁고 국가 간 편차가 작다.
 * `중남미 및 아시아 지역`은 중간 수준의 기대수명을 보이지만, 일부 국가는 더 높은 기대수명을 가지며 분포가 넓게 퍼져 있다.
 
 **3. GDP, 인구수별 기대수명**
 
-![image](https://github.com/user-attachments/assets/724f2ab2-0c06-47a8-b0aa-79bf22a3d319)
+<div align="center">
+  <img src="./readme_images/gdp_인구수_eda그래프.png" height="70%" width="70%">
+</div>
+
 * GDP에 따른 기대수명 변화
     * GDP가 낮은 구간에서는 기대수명이 상대적으로 낮고 변동폭도 크다.
     * GDP가 증가할수록 기대수명이 뚜렷하게 상승하며, 변동폭이 감소한다.특히 20K 이상 구간에서는 기대수명이 75세 이상으로 안정화되며, GDP가 더 증가해도 큰 변화는 없다.
@@ -291,15 +425,38 @@
 * 인구수에 따른 기대수명 변화
     * 인구가 적은 나라는 기대수의 분포가 넓고 국가 간 편차가 크다. 반대로 인구가 많은 나라는 기대수명이 상대적으로 좁은 범위에 걸쳐져 있다.
     * 로그 변환된 인구와 기대수명 간에 회귀선의 기울기가 수평에 가까워 뚜렷한 상관관계는 발견되지 않았다.
+ 
+  <br>
 
 #### **5-4. 생활 수준 및 습관 관련 변수**
 
 
 
+<br>
+
 ### 6. 최종 인사이트  
 
 
+#### 지역적 요인과 기대수명 
+
+* 대륙(지역)별로 기대수명이 뚜렷한 차이를 보인다..
+* 특히, 아프리카 지역은 낮은 기대수명과 높은 국가 간 편차를 보이지만, 오세아니아, 유럽, 북아메리카는 높은 기대수명과 국가 간 격차가 상대적으로 작아 안정된 경제적 환경과 의료 시스템의 중요성을 시사한다.
+  
+#### 경제적 요인(GDP)과 기대수명
+
+* GDP는 기대수명에 강한 양의 상관관계를 보이며, 0-10K에서는 GDP차이에 따라 기대수명의 차이가 크게 나지만 GDP 20K 이상에서는 기대수명이 약 75세 이상으로 안정화되는 경향을 확인할 수 있었다.
+* 이는 경제적 성장이 일정 수준 이상 도달했을 때, 기대수명을 결정짓는 주요 요인이 경제 외적 요소로 이동할 수 있음을 나타내며, 또한 저소득 국가에서는 조금의 경제 성장이 기대수명을 크게 증가시키는 핵심 전략이 될 수 있음을 파악할 수 있다.
+  
+#### 인구수와 기대수명
+
+* 인구수와 기대수명은 뚜렷한 상관관계가 발견되지 않았으나, 인구가 적은 국가에서 기대수명의 분산이 큰 경향이 있었다.
+* 이는 작은 국가일수록 특정 지역적, 정치적, 또는 경제적 요인이 국가 전체의 기대수명에 큰 영향을 미칠 수 있음을 시사한다
+
+<br>
+
 ---
+
+<br>
 
 ## 🌈 **팀원 한 줄 회고**  
 
