@@ -478,8 +478,12 @@
   - corr에서 상관관계가 뚜렷한 교육연수 기간 과 성인 사망자 수(음의 관계)에 관해 분석 진행
   - 교육 연수 기간과 성인 사망자 수 데이터를 정규화를 진행하여 분석
   - 대륙별로 차이가 존재하는지 분석
-
+ 
 <br>
+
+| **라이브러리**   | ![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy)       ![Pandas](http명 과 성인 사망자 수의 관계를 분석
+<br>
+
 <div>
   <img  width=50% src="./readme_images/jaehyeok/X_data_corr.png">
 </div>
